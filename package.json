@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "material-ui": "^0.20.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-google-charts": "^1.5.7",
     "react-scripts": "1.1.1"
   },
   "scripts": {
