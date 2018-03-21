@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import ColumnChart from './ColumnChart.js';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+import {amber900} from 'material-ui/styles/colors';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import Slider from 'material-ui/Slider';
 import './App.css';
 
@@ -18,6 +20,13 @@ class StatsHolder extends Component {
         },
       };
 
+      const muiTheme = getMuiTheme({
+        palette: {
+          trackColor: amber900,
+          selectionColor: amber900
+        },
+      });
+
     return (
       <div className="StatsHolder">
         <div className="inputs">
@@ -33,7 +42,7 @@ class StatsHolder extends Component {
         </div>
         <div className="graphs">
             <div className="slider" style={styles.root}>
-                <MuiThemeProvider>
+                <MuiThemeProvider muiTheme={muiTheme}>
                     <Slider style={{height: 300}} axis="y" defaultValue={0}/>
                 </MuiThemeProvider>
             </div>

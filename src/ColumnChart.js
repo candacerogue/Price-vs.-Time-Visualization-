@@ -39,7 +39,6 @@ class ColumnChart extends Component {
           graph_id="ColumnChart"
           width="100%"
           height="400px"
-          legend_toggle
         />
       </div>
     );
