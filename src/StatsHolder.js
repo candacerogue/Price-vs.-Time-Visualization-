@@ -21,12 +21,12 @@ class StatsHolder extends Component {
     return (
       <div className="StatsHolder">
         <div className="inputs">
-                <div class="titles">
-                    <label for="Price">Price</label>
-                    <label for="Speed">Speed</label>
+                <div className="titles">
+                    <label>Price</label>
+                    <label>Speed</label>
                     
                 </div>
-                <div class="change">    
+                <div className="change">    
                     <input name="price" id="Price"></input>
                     <input name="speed" id="speed"></input>
                 </div>
@@ -38,11 +38,11 @@ class StatsHolder extends Component {
                 </MuiThemeProvider>
             </div>
             <div className="bar-chart">
-                <ColumnChart/>
+                <ColumnChart data={this.props.data}/>
             </div>
         </div>
         <div className="choice">
-            <label for="Item_Price">Item Price</label>
+            <label>Item Price</label>
             <input name="item_price" id="Item_Price"></input>
             <button>Buy</button>
         </div>

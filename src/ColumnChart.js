@@ -7,14 +7,14 @@ class ColumnChart extends Component {
         super(props);
         this.state = {
           options: {
-            title: 'Age vs. Weight comparison',
-            hAxis: { title: 'Age', minValue: 0, maxValue: 15 },
-            vAxis: { title: 'Weight', minValue: 0, maxValue: 15 },
+            title: 'Price vs. Time Comparison',
+            hAxis: { title: 'Price', minValue: 0, maxValue: 100 },
+            vAxis: { title: 'Time', minValue: 0, maxValue: 1000 },
             legend: 'none',
           },
           data: [
-            ['Age', 'Weight'],
-            [8, 12],
+            ['Price', 'Time',{role: 'style'}, {role: 'annotation'}],
+            [100, 100,],
             [4, 5.5],
             [11, 14],
             [4, 5],
